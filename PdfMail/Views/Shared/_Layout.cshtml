@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PDF n Mail</title>
+	@Styles.Render("~/Styles/app")
+</head>
+<body>
+
+	@RenderBody()
+
+	<footer>
+		<hr />
+		<p>&copy; @DateTime.Now.Year - PdfMail</p>
+	</footer>
+
+	@Scripts.Render("~/Scripts/app")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

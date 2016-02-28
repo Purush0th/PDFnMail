@@ -1,14 +1,89 @@
-﻿* {
+﻿/*Google font import*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+* {
 	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 'Segoe UI',sans-serif;
+	font-family: 'PT Sans',Segoe UI, sans-serif;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+hr {
+	border-top: 1px solid #e0e0e0;
+}
+
+.site-title {
+	font-weight: 600;
+	font-size: 8vh;
+	letter-spacing: -1px;
+	color: #006064;
 }
 
 .main-content {
 	margin: 10px auto;
 	width: 768px;
 	text-align: center;
+}
+
+fieldset {
+	padding: 10px 20px;
+	border: 1px solid #e0e0e0;
+	background-color: #efebe9;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.input-group {
+	margin: 15px auto;
+}
+
+	.input-group label {
+		width: 40%;
+		display: inline-block;
+		text-align: right;
+		margin-right: 8px;
+	}
+
+	.input-group .input-field {
+		width: 50%;
+		display: inline-block;
+		border: 1px solid #e0e0e0;
+		-ms-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+input[type="email"].input-field {
+	height: 30px;
+}
+
+textarea.input-field {
+	height: 60px;
+	-moz-resize: none;
+	-ms-resize: none;
+	-o-resize: none;
+	resize: none;
+	vertical-align: top;
+}
+
+#mail-pdf button {
+	margin: 10px auto;
+	width: 200px;
+	height: 45px;
+	border: 0;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: 400;
+	font-size: 3vh;
+	background-color: #546e7a;
+	color: #fff;
+	-webkit-box-shadow: 0 3px #66bb6a;
+	-ms-box-shadow: 0 3px #66bb6a;
+	box-shadow: 0 3px #66bb6a;
 }

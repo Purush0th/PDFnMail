@@ -1,5 +1,5 @@
 ﻿;
-(function ($, jsPdf, toast) {
+(function ($, jsPdf, toast, progress) {
 
 	function generatePdf(message) {
 		var doc = new jsPdf();
@@ -25,6 +25,8 @@
 			if (!pdfData)
 				return;
 
+			//Indicate progress
+			progress.start();
 
 
 			var reqData = {
@@ -39,7 +41,9 @@
 				type: "POST",
 				contentType: "application/json; charset=utf-8",
 				success: function (response) {
-					if (response.result) {
+					progress.done();
+
+					if (response.result === "success") {
 
 						mailMessage.val("");
 						mailTo.val("");
@@ -47,10 +51,14 @@
 						toast.success("Mail send succesfully!");
 					}
 					else
-						toast.error("There seems to be some problem!");
+						toast.error("There seems to be a problem, Please try again!");
 
+				},
+				error: function () {
+					progress.done();
+					toast.error("Error in communicating with server!");
 				}
 			});
 		});
 	});
-})(jQuery, jsPDF, toastr);
+})(jQuery, jsPDF, toastr, NProgress);

@@ -1,24 +1,21 @@
 ﻿<article class="main-content">
 	<header>
-		<hgroup>
-			<h1>jsPDF to Mail</h1>
-
-		</hgroup>
+		<h1 class="site-title">PDF n Mail</h1>
 	</header>
 	<form id="mail-pdf">
 		<h4>Type your message here and send mail with PDF.</h4>
 		<fieldset>
-			<div>
+			<div class="input-group">
 				<label for="mail-to">To</label>
-				<input type="email" id="mail-to" required="required" />
+				<input class="input-field" type="email" id="mail-to" required="required" />
 			</div>
-			<div>
+			<div class="input-group">
 				<label for="mail-message">Your Message</label>
-				<input type="text" id="mail-message" required="required">
+				<textarea class="input-field" id="mail-message" required="required" maxlength="140" placeholder="Remember, be nice and short like you tweet!"></textarea>
 			</div>
 		</fieldset>
 
-		<button type="submit">Send Mail</button>
+		<button type="submit">Send</button>
 	</form>
 
 </article>

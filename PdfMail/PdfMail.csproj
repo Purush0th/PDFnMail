@@ -128,6 +128,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\nprogress.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -135,7 +136,7 @@
     <Content Include="Scripts\app\pdfmail.app.js" />
     <Content Include="Scripts\vendor\jquery-1.12.1.min.js" />
     <Content Include="Scripts\vendor\jspdf.min.js" />
-    <Content Include="Scripts\vendor\jspdf.plugin.autotable.js" />
+    <Content Include="Scripts\vendor\nprogress.js" />
     <Content Include="Scripts\vendor\toastr.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />

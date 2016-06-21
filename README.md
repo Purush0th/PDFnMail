@@ -4,7 +4,7 @@ Create PDF on client side using jsPDF and send it as a mail attachment. Check ou
 ![demo](docs/demo.png)
 
 ## About 
-This project is an ASP.Net MVC application with demonstrates creating PDF on client side using [jsPDF](https://github.com/MrRio/jsPDF) and send to server as a __base64__ string. Then the server will generate __PDF__ file and will mail that file as attachment.
+This project is an ASP.Net MVC application which demonstrates how to create PDF on client side using [jsPDF](https://github.com/MrRio/jsPDF) and send it to server as a __base64__ string. Then server will convert __PDF__ file from the base64 string and mail that file as attachment.
 ## Setup
 Download the [source](https://github.com/Purush0th/PDFnMail/archive/master.zip) and update the `web.config` smtp configurations. And fire the application!
 
